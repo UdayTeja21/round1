@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page with Dropdown Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style type="text/css">
+       /* #about{
+            border: 1px solid black;
+            background-color:  #f2f2f2;
+
+        }*/
+        #bo2{
+/*            border:0.5px solid black;*/
+             background-color:lightskyblue;
+             border-radius: 20px;
+
+
+        }
+        #cd{
+            background-color:light grey;
+/*            box-shadow:1px 2px 3px black;*/
+            border-radius: 20px;
+            border: 2px solid black;
+
+
+        }
+        #lbtn{
+            margin-top: 100px;
+            width:200px;
+            background-color:purple;
+        }
+        #car3{
+            width:350px;
+            height:500px;
+            /*margin:10px;
+            margin-left:;
+            float: left;*/
+/*            background-color:lightcyan;*/
+          /*  box-shadow:2px 3px 5px grey;
+            box-shadow:3px 4px 7px black*/
+            border: 2px solid black;
+
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            border:0.5px solid black;
+        }
+        #sc{
+            width:300px;
+        }
+        #ss{
+            border-radius: 30px;
+        }
+        #nav1{
+            position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: white; 
+        border-radius:20px 20px 60px 60px;
+        }
+        #car{
+            width:350px;
+            height:90px;
+            margin:10px;
+            margin-right:50px;
+            float: left;
+/*            background-color:lightcyan;*/
+            box-shadow:2px 3px 5px grey;
+            box-shadow:3px 4px 7px black
+
+        }
+         #car1{
+            width:350px;
+            height:90px;
+            margin:10px;
+            margin-right:50px;
+            float: left;
+/*            background-color:lightcyan;*/
+            box-shadow:2px 3px 5px grey;
+            box-shadow:3px 4px 7px black
+
+        }
+        #some{
+            margin-left:30px;
+        }
+        #hp2{
+            background-color: #f2f2f2;
+        }
+
+        #sp{
+            margin-left:30px;
+        }
+        #img1{
+            display: flex;
+        }
+        #ws{
+            border-radius: 25px;
+        }
+        #about{
+/*            background-color: green;*/
+
+        }
+        #homeDropdown {
+            margin-left: 300px;
+        }
+        #medi {
+            color: purple;
+        }
+        /*#bk {
+            background-image: url('fimages/doc.WEBP');
+             background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: ;
+    background-position: center center;
+            height:600px;
+            max-width:100%;
+        }*/
+        #backtext{
+            padding-top:100px;
+            padding-left:30px;
+            font-family:cursive;
+        }
+        #backtext2{
+            padding-top:10px;
+            padding-left:30px;
+            font-family:cursive;
+        }
+        #qsa{
+            border-radius: 20px;
+        }
+
+        #text{
+            font-size:30px;
+/*            margin-right: 100px;*/
+        }
+        .back {
+    background-image: url('../round1/taskimg/bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 600px; /* Add this line */
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+    </style>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="container-fluid">
+     <div class="row mt-3" id="">
+         <div class="col-lg-12 bg-" >
+<nav class="navbar navbar-expand-lg navbar-light bg-light"  id="nav1">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="medi">Medical</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" class="container-fluid">
+            <ul class="navbar-nav">
+
+
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Home
+                    </a>
+                    <!-- div class="dropdown-menu" aria-labelledby="homeDropdown">
+                        <a class="dropdown-item" href="#">Service 1</a>
+                        <a class="dropdown-item" href="#">Service 2</a>
+                        <a class="dropdown-item" href="#">Service 3</a>
+                    </div> -->
+                </li>
+
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                        <a class="dropdown-item" href="#">Service 1</a>
+                        <a class="dropdown-item" href="#">Service 2</a>
+                        <a class="dropdown-item" href="#">Service 3</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                        <a class="dropdown-item" href="#">Service 1</a>
+                        <a class="dropdown-item" href="#">Service 2</a>
+                        <a class="dropdown-item" href="#">Service 3</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="blogDropdown">
+                        <a class="dropdown-item" href="#">Service 1</a>
+                        <a class="dropdown-item" href="#">Service 2</a>
+                        <a class="dropdown-item" href="#">Service 3</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container-fluid mt-12 back" id="bk">
+    
+
+    <div id="back">
+        <div class="row mt-3" id="backtext">
+        <div class="col-lg-6 bg-"><p id="text">We are introducing<br>telehealth solution<br>for patients</p></div>
+
+
+    </div>
+
+
+    <div class="row mt-3" id="backtext2">
+        <div class="col-lg-6 bg-" >We are here to deliver you inovative medical treatment for your<br>
+health. Choose your doctor and start your treatment.</div>
+        </div>
+
+        <div class="row mt-3" id="backtext2">
+        <div class="col-lg-2 bg-" ><button class="btn btn-primary">Appointment</button></div>
+            <div class="col-lg-2 bg-" ><button class="btn btn-outline-primary">Learn more</button>
+</div>
+        </div>
+        
+    </div>
+
+
+    <!-- <div class="container" id="back">
+         Your content here 
+    </div> -->
+</div>
+
+
+
+<div class="container-fluid" id="about">
+   <center><h2>About Tele Health</h2>
+   <p>Conselted egerness unfilling deficient existance of calling nothing and feritile for venture<br>way boy.estam spirit temper tooo say </p><br></center>
+   <div class="container-fluid" id="img1"><div class="row lg-6 bg-" ><img id="ss" src="../round1/taskimg/img1.avif" class="img-fluid" height="500px" ></div>
+
+     <div class="container-fluid" id="some">
+        <center><div class="row lg-5 bg-" ><h1>Our Team Always Ready To<br>Recived Your Call 24/7</h1></center>
+     <p>gdvs yrgeuirha rgyegrgye t8riujti 8ure8yt 8teu99yeuy8pouoituruyj uuty8e89uy8t98r9u<br>dvs yrgeuirha rgyegrgye t8riujti 8ure8yt 8teu99yeuy8pouoituruyj uuty8e89uy8t98r9u</p>
+     <ul type="none">
+         <li><i class='bx bx-checkbox-checked'></i>Award wining world wide tele health</li>
+         <li><i class='bx bx-checkbox-checked'></i>Contact us at any Time</li>
+         <li><i class='bx bx-checkbox-checked'></i>Ready Ambulance for Emergency</li>
+         <li><i class='bx bx-checkbox-checked'></i>Proffesional Doctors</li>
+
+     </ul>
+     </div>
+     </div>
+   </div>
+    
+</div>
+
+    
+</div>
+<div class="container-fluid" id="hp" id="hp2">
+   <center> <h2>highly professional</h2></center>
+    <div class="row mt-3"  id="backtext">
+     <div class="col-lg-6 bg-"><h3>our medical doctors are highly professional</h3><br><p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.   </p>
+    <button id="ws" class="btn-warning">doctor list</button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="ws" class="btn-warning">free consultant</button>
+
+     </div>
+
+
+
+     <div class="col-lg-6 bg-"><img src="../round1/taskimg/img2.avif" class="img-fluid" height="500px" ></div>
+ </div>
+</div>
+
+<div class="container-fluid" id="hp">
+   <center> <h2>Our Core Services</h2></center>
+   <div class="row mt-3" id="backtext2">
+    <div class="col-lg-4 bg-" id="cd"><b>cardic guidelines</b><p>Lorem ipsum dolor sit,<br>Lorem ipsum dolor sit</p></div>
+     <div class="col-lg-4 bg-" id="cd"><b>flu prevention</b><p>Lorem ipsum dolor sit,<br>Lorem ipsum dolor sit</p></div>
+      <div class="col-lg-4 bg-" id="cd"><b>gyenocology care</b><p>Lorem ipsum dolor sit,<br>Lorem ipsum dolor sit</p></div>
+    </div>
+
+   <!-- <br> -->
+   <div class="row mt-3" id="backtext2">
+    <div class="col-lg-4 bg-" id="cd"><b>cardiac guidelines</b><p>Lorem ipsum dolor sit<br>Lorem ipsum dolor sit</p></div>
+     <div class="col-lg-4 bg-" id="cd"><b>flu prevention</b><p>Lorem ipsum dolor sit,<br>Lorem ipsum dolor sit</p></div>
+      <div class="col-lg-4 bg-" id="cd"><b>gyenocology care</b><p>Lorem ipsum dolor sit,<br>Lorem ipsum dolor sit</p></div>
+    </div>
+    </center>
+</div>
+    
+    </div>
+
+    <div class="container-fluid" id="hp">
+   <center> <h2></h2></center>
+    <div class="row mt-3"  id="backtext">
+     <div class="col-lg-6 bg-"><img id="qsa" src="../round1/taskimg/img4.avif" class="img-fluid" height="" width="100%" >
+    <!-- <button class="btn-warning">doctor list</button>&nbsp;<button class="btn-warning">free consulttant</button> -->
+
+     </div>
+
+
+
+     <div class="col-lg-6 bg-"><center><h3>check your health by telehealth solutions</h3></center><br><p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.   </p>
+     <ul>
+         <li>Award wining world wide tele health</li>
+         <li>Contact us at any Time</li>
+         <li>Ready Ambulance for Emergency</li>
+         <li>Proffesional Doctors</li>
+
+     </ul>
+ </div>
+ </div>
+
+    
+</div>
+
+
+
+
+ <!-- <-- form place--> -->
+
+<div class="container-fluid" id="hp">
+    <center>
+        <h2>Make an Appointment</h2>
+    </center>
+    <div class="row mt-3" id="backtext">
+        <div class="col-lg-6 bg-">
+            <h3>Appointment Form</h3>
+            <form>
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" class="form-control" id="fullname" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <center><button type="submit" class="btn btn-primary">confirm Appointment</button></center>
+            </form>
+        </div>
+
+
+        <div class="col-lg-6 bg-"><img id="qsa" src="../round1/taskimg/img7.avif" class="img-fluid"></div>
+
+
+
+<div class="container-fluid bg-">
+    <div class="row mt-3"  id="backtext">
+
+        <div class="col-lg-4 bg-"><img id="qsa" src="../round1/taskimg/img5.avif" class="img-fluid"></div>
+            <div class="col-lg-8 bg-"><h1>call us for any emergency situation</h1><br><h1>we are 24/7 active for you</h1>
+
+             <hr>
+             <h3>toll-free:+536-546-5453</h3>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid">
+    <center><h1>frequently asked question</h1>
+    <!-- <p>xty,.geywguggryegyrgyegytrgytiergteiyrgtnrigurgmugymrthy7gthrwmy7tygrwgrtgfrbfhrekbfiuwnuywiunrytuiewtrtbg trg8wybt8rwybt8rywbt azsxdcfvgbhnjmk,l.lkmj<br>xty,.geywguggryegyrgyegytrgytiergteiyrgtnrigurgmugymrthy7gthrwmy7tygrwgrtgfrbfhrekbfiuwnuywiunrytuiewtrtbg trg8wybt8rwybt8rywbt azsxdcfvgbhnjmk,l.lkmj</p></center> -->
+    <div class="container-fluid bg-">
+    <div class="row mt-3"  id="backtext">
+
+        <div class="col-lg-6 bg-"><h4>how can i join the live chat with doctor</h4><br><p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p>
+        <hr>
+       <!--  <div class="col-lg-6 bg-warning">
+        <select id="sc">
+            <option>what is fee for patients</option>
+            <option>It is common for all the patients through out all ages</option>
+            
+        </select>
+    </div> -->
+        <hr>
+
+        <hr>
+       <div class="col-lg-6 bg-">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            What are the facilities available here?
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a class="dropdown-item" href="#">What is the fee for patients?</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+            <li><a class="dropdown-item" href="#">Option 3</a></li>
+        </ul>
+    </div>
+</div>
+<hr>
+
+<div class="col-lg-6 bg-">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             What are the facilities available here?
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li><a class="dropdown-item" href="#">What is the fee for patients?</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+            <li><a class="dropdown-item" href="#">Option 3</a></li>
+        </ul>
+    </div>
+</div>
+<hr>
+
+<div class="col-lg-6 bg-">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             What are the facilities available here?
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+            <li><a class="dropdown-item" href="#">What is the fee for patients?</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+            <li><a class="dropdown-item" href="#">Option 3</a></li>
+        </ul>
+    </div>
+</div>
+<hr>
+
+<div class="col-lg-6 bg-">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              What are the facilities available here?
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+            <li><a class="dropdown-item" href="#">What is the fee for patients?</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+            <li><a class="dropdown-item" href="#">Option 3</a></li>
+        </ul>
+    </div>
+</div>
+<hr>
+
+
+    
+        </div>
+            <div class="col-lg-6 bg-"><img id="qsa" src="../round1/taskimg/img8.avif" class="img-fluid" height="600px" width="600px">
+            </div>
+    </div>
+</div>
+
+
+
+</div>
+<div class="container-fluid">
+    <div class="container-fluid bg-">
+    <div class="row mt-3"  id="backtext">
+        <div class="col-lg-6 bg-"><div class="card" id="car3"><h5>Tony Stark</h5><p>Executive producer</p><br><p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.</p>
+         
+        </div> </div>
+        <div class="col-lg-6 bg-"><h4>patients feedback</h4><h2>what our clients<br> say about our tele <br>    helth solution</h2><div class="col-lg-2 bg-" ><button class="btn btn-primary" id="lbtn">More reviews</button></div></div>  
+</div>
+
+<div class="container-fluid">
+    <div class="row mt-3" id="backtext">
+        <div class="col-lg-12 bg-"><center><h3>We love to work with our partners</h3></center></div>
+        <div class="col-lg-3 bg-"><img src="../round1/taskimg/icon1.png" class="img-fluid"></div>
+        <div class="col-lg-3 bg-"><img src="../round1/taskimg/icon2.jpeg" class="img-fluid"></div>
+        <div class="col-lg-3 bg-"><img src="../round1/taskimg/icon3.png" class="img-fluid"></div>
+        <div class="col-lg-3 bg-"><img src="../round1/taskimg/logo4.avif" class="img-fluid"></div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid">
+    <div class="row mt-3" id="backtext">
+        
+        <div class="col-lg-10 bg-"><h6>Are your ready for monthly free consultatioin</h6></div>
+        <div class="col-lg-2 bg-"><button class="btn-warning">Contact now</button>
+        
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="bo2">
+    <div class="row mt-3" id="backtext">
+        
+        <div class="col-lg-3 bg-"><h4>About</h4><p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p></div>
+        <div class="col-lg-3 bg-">
+            <h4>Services</h4>
+            <ul type="none">
+                <li>It consultant</li>
+                <li>Business Growth</li>
+                <li>Investment Plan</li>
+                <li>Product development</li>
+                <li>Industrial consultant</li>
+            </ul>
+        </div>
+        <div class="col-lg-3 bg-">
+            <h4>Support</h4>
+            <ul type="none">
+                <li>documentation</li>
+                <li>Product</li>
+                <li>Reporting issue</li>
+                <li>Terms an conditions</li>
+                <li>Private policy</li>
+            </ul>
+        </div>
+        <div class="col-lg-3 bg-">
+             <h4>Quick Links</h4>
+            <ul type="none">
+                <a href="#"><li>home</li></a>
+                 <a href="#"><li>about</li></a>
+                  <a href="#"><li>services</li></a>
+                   <a href="#"><li>pricing</li></a>
+                    <a href="#"><li>contact</li></a>
+            </ul>
+        </div>
+    </div></div>
+</div>
+<!-- Include Bootstrap JS (optional, for Bootstrap features like modals, etc.) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/ulg/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
